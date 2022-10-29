@@ -1,0 +1,15 @@
+{
+  "name": "cypress_jul2022",
+  "version": "1.0.0",
+  "description": "My cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lanre",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^10.11.0"
+  }
+}
