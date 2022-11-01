@@ -36,4 +36,26 @@ describe('Register account', function() {
         cy.get('#submitAccount > span').click()
         cy.get(locators.MyAccountPlaceholder).should('have.text', locators.AssertSuccessMyAccount)
       })
+      it.only('Update user address', function() {
+        cy.get(locators.RegisteredEmail).type('lanre_april@gmail.com')
+        cy.get(locators.RegisteredPassword).type('testing')
+        cy.get(locators.SubmitLoginBtn).click()
+        cy.get(locators.MyAddressesLink).click()
+        cy.get(locators.UpdateAddressBtn).click()
+        cy.get(locators.Address).clear()
+        cy.get(locators.Address).type('22,fake str')
+        cy.get(locators.city).clear()
+        cy.get(locators.city).type('Arlington')
+        cy.get(locators.State).select('Texas')
+        cy.get(locators.PostCode).clear()
+        cy.get(locators.PostCode).type('22222')
+        cy.get(locators.Phone).clear()
+        cy.get(locators.Phone).type('04325678')
+        cy.get(locators.Alias).clear()
+        cy.get(locators.Alias).type('Home')
+        cy.get(locators.ClickSaveBtn).click()
+        
+    
+        
+      })
     })
