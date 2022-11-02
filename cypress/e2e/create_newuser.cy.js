@@ -20,6 +20,7 @@ describe('Register account', function() {
        it('Register User', function() {
         cy.get(locators.createUseremail).type(email);
         cy.get(locators.createAccBTN).click()
+        cy.wait(5000)
         cy.get(locators.gender).click()
         cy.get(locators.firstNameField).type(firstName)
         cy.get(locators.lastNameField).type(lastName)
