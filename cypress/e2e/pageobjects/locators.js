@@ -13,3 +13,16 @@ export const Address = '#address1'
 export const city = '#city'
 export const AssertSuccessMyAccount = 'My account'
 export const MyAccountPlaceholder = '.page-heading'
+
+export const Useremail = "#email"
+export const Userpassword = "#passwd"
+export const SigninBtn = "#SubmitLogin > span"
+export const TSHIRTS = '.sf-menu > :nth-child(3) > a'
+export const SizeM = "#layered_id_attribute_group_2"
+export const AddToCartBtn = '.ajax_add_to_cart_button > span'
+export const ProceedToCheckOut = '.button-container > .button-medium > span'
+export const ProceedToCheckOutConfirm = '.cart_navigation > .button > span'
+export const TermsOfService = "#cgv"
+export const BankWirePayment = '.bankwire'
+export const ConfirmMyOrder = '#cart_navigation > .button > span'
+export const OrderConfirmation = '.page-heading'
